@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM haproxy:1.6-alpine
+FROM haproxy:1.6
 MAINTAINER Torchbox Sysadmin <sysadmin@torchbox.com>
 
 RUN apk update && apk add bind-tools && rm -rf ~/.cache
