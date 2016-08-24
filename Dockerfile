@@ -13,9 +13,6 @@
 # limitations under the License.
 
 FROM haproxy:1.6
-MAINTAINER Torchbox Sysadmin <sysadmin@torchbox.com>
-
-RUN apk update && apk add bind-tools && rm -rf ~/.cache
 
 ADD proxy.conf.insecure.in /proxy.conf.in
 ADD run_proxy.sh /usr/bin/run_proxy
