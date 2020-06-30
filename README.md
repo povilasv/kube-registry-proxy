@@ -1,5 +1,5 @@
 # kube-registry-proxy
-Kube-registry-proxy which fixes tiumeout issue in kubernetes registry proxy.
+Kube-registry-proxy which fixes timeout issue in kubernetes registry proxy.
 
 ## Configuration
 This docker image is configurable with following environment variables:
