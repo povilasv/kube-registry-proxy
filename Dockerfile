@@ -20,4 +20,7 @@ ADD run_proxy.sh /usr/bin/run_proxy
 RUN chown root:users /usr/bin/run_proxy
 RUN chmod 755 /usr/bin/run_proxy
 
+RUN apt-get update && \
+    apt-get install -yq host
+
 CMD ["/usr/bin/run_proxy"]
